@@ -1,6 +1,7 @@
-/* File: styles/7-style.css */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap');
 
-/* Custom properties for font families, sizes, and weights in the root */
+/* Font properties and colors in root */
 :root {
     --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -19,22 +20,21 @@
     --font-weight-bold: 700;
 }
 
-/* Smooth scrolling to the entire document */
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%; /* Set font size to 62.5% */
+    font-size: 62.5%;
 }
 
 body {
     font-family: var(--font-family-base);
     color: var(--text-color);
-    font-size: var(--font-size-medium); /* Set body font size to font-size-medium */
-    font-weight: var(--font-weight-regular); /* Set body font weight to font-weight-regular */
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold); /* Set headings font weight to font-weight-bold */
+    font-weight: var(--font-weight-bold);
 }
 
 .visually-hidden {

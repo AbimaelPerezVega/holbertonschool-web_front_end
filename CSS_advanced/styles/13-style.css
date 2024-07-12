@@ -1,6 +1,7 @@
-/* File: styles/13-style.css */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap');
 
-/* Custom properties for font families, sizes, weights, line-heights, and text transformations in the root */
+/* Font properties, colors, and line heights in root */
 :root {
     --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -26,7 +27,6 @@
     --section-title-color: var(--color-black);
 }
 
-/* Smooth scrolling to the entire document */
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -45,28 +45,29 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-/* Target only anchor elements containing a hyperlink */
-a[href] {
+a:link {
+    color: var(--text-color);
     text-decoration: none;
 }
 
-/* Target visited state for the link */
-a[href]:visited {
+a:visited {
     font-style: italic;
 }
 
-/* Target hover state for the link */
-a[href]:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Target active state for the link */
-a[href]:active {
+a:active {
     background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
     display: none;
+}
+
+.card-category {
+    color: var(--color-primary);
 }
 
 .section-header {
@@ -82,11 +83,8 @@ a[href]:active {
 }
 
 .section-tagline {
+    color: var(--color-primary);
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
-}
-
-.card-category, .section-tagline {
-    color: var(--color-primary);
 }

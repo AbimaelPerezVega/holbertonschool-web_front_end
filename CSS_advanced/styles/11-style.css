@@ -1,6 +1,7 @@
-/* File: styles/11-style.css */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap');
 
-/* Custom properties for font families, sizes, weights, line-heights, and text transformations in the root */
+/* font properties, colors, and line heights in root */
 :root {
     --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -24,7 +25,6 @@
     --section-tagline-transform: uppercase;
 }
 
-/* Smooth scrolling to the entire document */
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -43,20 +43,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a {
-    text-decoration: none;
-}
-
 .visually-hidden {
     display: none;
 }
 
-.section-header {
-    text-align: var(--section-header-align);
-}
-
 .card-category, .section-tagline {
     color: var(--color-primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Centering section headers */
+.section-header {
+    text-align: var(--section-header-align);
 }
 
 .section-tagline {
